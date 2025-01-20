@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.retrofitexample"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.retrofitexample"
@@ -36,17 +36,18 @@ dependencies {
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
-    implementation(libs.constraintlayout)
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
     implementation(libs.retrofit)
-    implementation(libs.converter.scalars)
-    implementation (libs.retrofit.v210)
-    implementation (libs.converter.gson)
-    implementation (libs.converter.gson.vlatestversion)
-    implementation (libs.gson)
-    implementation(libs.retrofit.v2110)
-    implementation (libs.converter.gson.v290)
+    implementation(libs.converter.gson.v2110)
+    implementation(libs.gson)
+    implementation(libs.appcompat)
+    implementation(libs.material)
+    implementation(libs.activity)
+    implementation(libs.constraintlayout)
+    implementation(libs.extension.okhttp)
+    implementation(libs.media3.datasource.okhttp)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation(libs.converter.gson.v2110)
 }
