@@ -1,14 +1,14 @@
 package com.example.retrofitexample;
 
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Query;
 
 public interface ApiInterface {
-    @GET("filter.php?i=Gin")
-    Call<Drinks> getGinDrinks();
+        @GET("filter.php")
+        Call<Drinks> getDrinksByLicour(@Query("i") String licour);
 
-    @GET("filter.php?i=Vodka")
-    Call<Drinks> getVodkaDrinks();
+        @GET("lookup.php?")
+        Call<CoctailDetail> getDrinkDetail(@Query("i") String id);
 }

@@ -7,14 +7,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textoElegir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chooseText"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/design_default_color_primary"
+        />
+   <EditText
+       android:id="@+id/filtro"
+       android:layout_width="250dp"
+       android:layout_height="50dp"
+       android:autofillHints="gin"
+       app:layout_constraintTop_toBottomOf="@id/textoElegir"
+       app:layout_constraintStart_toStartOf="parent"
+       android:layout_marginHorizontal="50dp"
+       android:layout_marginVertical="20dp"
+       android:hint="@string/gin_vodka"
+       android:paddingHorizontal="10dp"
+       android:inputType="text"
+       />
+
+    <ImageView
+        android:id="@+id/buscar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/search"
+        app:layout_constraintTop_toBottomOf="@id/textoElegir"
+        app:layout_constraintStart_toEndOf="@id/filtro"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="25dp"
+        android:contentDescription="@string/imagen_del_coctail"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/filtro"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

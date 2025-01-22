@@ -9,7 +9,7 @@ public class Drinks {
     @SerializedName("drinks")
     List<Coctail> drinks = new ArrayList<>();
 
-    public class Coctail {
+    public static class Coctail {
         @SerializedName("strDrink")
         public String name;
         @SerializedName("strDrinkThumb")
@@ -17,5 +17,7 @@ public class Drinks {
         @SerializedName("idDrink")
         public String id;
     }
+
+
 }
 

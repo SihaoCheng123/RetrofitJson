@@ -47,6 +47,7 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.extension.okhttp)
     implementation(libs.media3.datasource.okhttp)
+    implementation (libs.glide)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

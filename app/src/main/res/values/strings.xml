@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">RetrofitExample</string>
+    <string name="gin">Gin</string>
+    <string name="chooseText">Choose the alcohol</string>
+    <string name="vodka">Vodka</string>
+    <string name="imagen_del_coctail">Imagen del coctail</string>
+    <string name="gin_vodka">gin/vodka</string>
 </resources>

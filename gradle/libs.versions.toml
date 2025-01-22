@@ -2,6 +2,7 @@
 agp = "8.7.3"
 converterGson = "latest.version"
 converterGsonVersion = "2.9.0"
+glide = "4.16.0"
 gson = "2.11.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -26,6 +27,7 @@ converter-gson-v290 = { module = "com.squareup.retrofit2:converter-gson", versio
 converter-gson-vlatestversion = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
 converter-name = { module = "com.squareup.retrofit2:converter-name", version.ref = "retrofit" }
 converter-scalars = { module = "com.squareup.retrofit2:converter-scalars", version.ref = "retrofit" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
